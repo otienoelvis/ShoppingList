@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="gray">#2d2d2d</color>
+    <color name="background_gray">#494d5f</color>
+
+
+<!--  Mine -->
+    <color name="colorPrimary">#11B196</color>
+    <color name="colorPrimaryLight">#8BD1C5</color>
+    <color name="text_black_21">#212121</color>
+    <color name="green">#0BB61C</color>
+    <color name="red">#EE0202</color>
+    <color name="dark_red">#990101</color>
+    <color name="yellow">#EECF02</color>
+    <color name="text_black_66">#666666</color>
+    <color name="shimmer_01">#89ACA6</color>
+    <color name="shimmer_black">#B5B5B5</color>
+    <color name="line_grey">#1F000000</color>
+    <color name="radio_button_grey">#DADADA</color>
+    <color name="grey3">#B3B3B3</color>
+    <color name="black_40">#66000000</color>
+    <color name="rating_grey">#E8E8E8</color>
+    <color name="box_grey">#CF2727</color>
+    <color name="box_greydd">#F3F3F3</color>
+    <color name="text_black">#3e3e3e</color>
+    <color name="gray3">#61000000</color>
+    <color name="light_mint">#CFEFEA</color>
+    <color name="grey5d">#5d5d5d</color>
+    <color name="light_grey">#FAFAFA</color>
+    <color name="notification_unread">#CFEFEA</color>
+    <color name="polygon_color">#CC11B196</color>
+    <color name="link_blue">#3D9CD5</color>
+    <color name="blue_black">#002740</color>
+    <color name="pure_black">#000000</color>
+
+</resources>
