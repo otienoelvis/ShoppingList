@@ -7,9 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.simba.looksgood.R
 import com.simba.looksgood.data.db.entities.ShoppingItem
 import com.simba.looksgood.ui.shoppingList.ShoppingViewModel
+import kotlinx.android.synthetic.main.shopping_item.view.*
 
 class ShoppingItemAdapter(
-    val items: List<ShoppingItem>,
+    var items: List<ShoppingItem>,
     private val viewModel: ShoppingViewModel
 ) : RecyclerView.Adapter<ShoppingItemAdapter.ShoppingViewHolder>(){
 
@@ -21,7 +22,24 @@ class ShoppingItemAdapter(
     override fun onBindViewHolder(holder: ShoppingViewHolder, position: Int) {
         val currentShoppingItem = items[position]
 
-        holder.tv
+        holder.itemView.tvName.text = currentShoppingItem.name
+        holder.itemView.tvAmount.text = "${currentShoppingItem.amount}"
+
+        holder.itemView.ivDelete.setOnClickListener {
+            viewModel.delete(currentShoppingItem)
+        }
+
+        holder.itemView.ivPlus.setOnClickListener{
+            currentShoppingItem.amount++
+            viewModel.upsert(currentShoppingItem)
+        }
+
+        holder.itemView.ivMinus.setOnClickListener {
+            if (currentShoppingItem.amount > 0){
+                currentShoppingItem.amount--
+                viewModel.upsert(currentShoppingItem)
+            }
+        }
     }
 
     override fun getItemCount(): Int {

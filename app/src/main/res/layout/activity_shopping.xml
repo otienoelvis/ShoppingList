@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="16dp"
-    android:background="@color/background_gray"
+    android:background="@color/blue_black"
     tools:context=".ui.shoppingList.ShoppingActivity">
 
     <androidx.recyclerview.widget.RecyclerView
